@@ -1,0 +1,77 @@
+ body{
+                
+                margin: 0;
+                padding: 0;
+                font-family: "Montserrat", arial, sans-serif;
+     
+                font-size: 13px;
+                background-image:  url(https://agenciainformativavmc.com.mx/wp-content/uploads/2017/05/fondo-gris.png);
+     background-size: cover;
+     background-position: bottom center;}
+                 
+                 
+                    
+            }
+            .contenedor{
+                width: 80%;
+                 margin: 0 auto;
+                background-color: 969FA1;
+                border-radius: 20%px  ;
+                COLOR: #012B36;
+                    
+                    
+            }
+
+            header{
+                padding:40px 5px;
+                margin-bottom:20px;
+           background:url(http://www.grasesoria.com/images/GR-Asesoria-Inca-Portada-Empresa.jpg) no-repeat center bottom;
+                 height: 200px;
+                background-size: 100%;
+                
+                    
+                
+            }
+            header h1,header h2, header h4{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                
+}           }
+.contenedor section {
+     float: left;
+    width: 49%;
+    margin: 10%;
+    
+    
+}
+ 
+section h2{
+     background: #96C5F3;
+    text-transform: uppercase;
+    padding: 8px;
+}
+    
+     
+#imagenes img  
+    { width: 17%;
+    display: inline-block;
+    padding: 15px;
+    background: #C7DDF3;
+    margin: 5px;
+        
+    
+}
+    
+
+#imagenes img {
+    padding: 5px;
+    margin: 10px;
+    width: 25%;
+}
+
+/*solucionar elementos*/
+.clear{
+ clear: both;
+    
+}
