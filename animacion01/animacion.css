@@ -1,0 +1,73 @@
+/* CSS */
+
+.ejemplo {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    height: 100px;
+}
+
+.figura {
+    position: absolute;
+    left: 0;
+    height: 8px;
+    padding: 25px;
+    width: 8px;
+    background-color: #caebb7;
+    border: 2px solid #5b973b;
+    animation: mover 4s ease 0s infinite normal running;
+   -o-animation: mover 4s ease 0s infinite normal running; /* Opera */
+   -ms-animation: mover 4s ease 0s infinite normal running; /* IE */
+   -moz-animation: mover 4s ease 0s infinite normal running; /* Firefox */
+   -webkit-animation: mover 4s ease 0s infinite normal running; /* Safari y Chrome */
+}
+
+
+@keyframes mover {
+    
+    0% {
+    left: 0%;
+    top: 0%;
+}
+    
+    25% {
+        left: 90%;
+        TOP:0%;
+        transform: rotate(2160DEG);
+    }
+    50% {
+        left: 90%;
+        TOP:90%;
+        transform: rotate(2160deg);
+    }
+    75% {
+        left: 0%;
+        TOP:90%;
+        transform: rotate(1080DEG);
+    }
+    100%{
+        left: 0%;
+        top: 0%;
+        transform: rotate(3240DEG);
+        
+    }
+    
+}
+
+/* Para mayor compatibilidad entre navegadores, tendríamos
+que repetir el proceso con los prefijos correspondiente. El siguiente,
+sería para Safari y Chrome, pero tendríamos que añadir los demás. */
+
+@-webkit-keyframes mover {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 90%;
+        -webkit-transform: rotate(1080deg);
+    }
+    100% {
+        left: 0%;
+    }
+}
