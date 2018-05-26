@@ -23,36 +23,17 @@
    -webkit-animation: mover 4s ease 0s infinite normal running; /* Safari y Chrome */
 }
 
-
 @keyframes mover {
-    
     0% {
-    left: 0%;
-    top: 0%;
-}
-    
-    25% {
-        left: 90%;
-        TOP:0%;
-        transform: rotate(2160DEG);
+        left: 0%;
     }
     50% {
         left: 90%;
-        TOP:90%;
-        transform: rotate(2160deg);
+        transform: rotate(1080deg);
     }
-    75% {
+    100% {
         left: 0%;
-        TOP:90%;
-        transform: rotate(1080DEG);
     }
-    100%{
-        left: 0%;
-        top: 0%;
-        transform: rotate(3240DEG);
-        
-    }
-    
 }
 
 /* Para mayor compatibilidad entre navegadores, tendríamos
