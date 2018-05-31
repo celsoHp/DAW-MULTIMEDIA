@@ -1,0 +1,28 @@
+
+@media only screen and ( max-width: 480px){
+  body {
+    background-color: #FFF475;
+
+  }
+}
+header{
+  padding: 45px ;
+  float: left;
+}
+nav{
+  padding: 45px;
+  float: left;
+}
+section{
+  padding: 120px;
+  
+}
+section{
+  padding: 120px;
+}
+aside{
+  padding: 25px;
+}
+footer{
+  padding: 15px;
+}

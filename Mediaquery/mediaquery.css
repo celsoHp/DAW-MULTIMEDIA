@@ -1,0 +1,40 @@
+/*Aqui van los estilos en general*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#117722;
+
+}
+span::before{
+  content: "Estado inicial";
+}
+@media only screen and (max-width:1024px) {
+  /*Aqui van los estilos de iPad en horizontal*/
+  body{
+    background:black;
+  }
+  span::before{
+    content: "Diseño para pantallas pequeñas";
+  }
+
+}
+@media only screen and (max-width:768px) {
+  /*Aqui van los estilos para tablets*/
+  body{
+    background:yellow;
+  }
+}
+@media only screen and (max-width:480px) {
+  /*Aqui van los estilos para moviles*/
+  body{
+    background:red;
+  }
+}
+@media only screen and (max-width:320px) {
+  body{
+    background:blue;
+  }
+
+}
