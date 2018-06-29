@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<HTML xm1ns="http://www.w3.org/1999/xhtm1">
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>JavaScript 42</title>
+    <script>
+    function iniciar(){
+        
+        var labels=document.getElementsByClassName("label");
+        for(x=0; x<labels.length; x++){
+            labels[x].style.color="Blue";
+        }
+        var negritas=document.getElementsByName("strong");
+        for(x=0; x<negritas.length;x++){
+            negritas[x].style.textTransform="uppercase";
+        }
+        
+        document.getElementById("apellido").style.fontStyle="italic";
+        document.querySelectorAll("#apellido b")[0].style.fontStyle="normal";
+        
+        //crear nodo de tipo Element
+        var parrafo = document.createElement("p");
+        //crear nodo de tipo text
+        
+    var contenido = document.createTextNode("Hola Mundo!");
+        //Añadir el nodo text como hijo del modo element
+        parrafo.appendChild(contenido);
+        
+        //añadir el nodo element como hijo de la página
+        document.body.appendChild(parrafo);
+        
+    }
+        
+        
+    </script>
+    <style type="text/css">
+        #tabla{
+            width: 300px;
+            border-spacing: 0;
+            border: 1px solid #ccc;
+            
+            
+            
+        }
+        
+    
+    </style>
+    
+    </head>
+    <body onload="iniciar();">
+    <p id="titulo" class="label">Esta página es <strong>muy sencilla</strong></p>
+        <p id="nombre" class="label"><strong>Nombre</strong>Celso</p>
+        <p id="apellido" class="label"><b>apellido</b>Hoil</p>
+        <table id="tabla">
+        <tr>
+            
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+    
+    
+</HTML>

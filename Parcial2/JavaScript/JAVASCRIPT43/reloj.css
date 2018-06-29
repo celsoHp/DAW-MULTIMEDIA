@@ -1,0 +1,38 @@
+ 
+#startTime{
+    background:#181BB8;
+    display: block;
+    margin: 0 0 200px 150px;
+    text-align: center;
+    width: 500px;
+}
+
+@Font-face{
+        font-family:DS-DIGI;
+    src: url(DS-DIGI.TTF);
+        
+    }
+
+
+#txt{
+      font-family: DS-DIGI;  
+    font-size: 200px;
+    color:#FF0000;
+    background-color: #0E0A0A;
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    border-width: 500px;
+    border-color: #FF0000;
+    border-radius: 0px;
+    -moz-border-radius:50px;
+}
+
+body{
+    
+    
+   background-color: #D3D3D3;  
+     background-image:  url(https://agenciainformativavmc.com.mx/wp-content/uploads/2017/05/fondo-gris.png);
+     background-size: cover;
+     background-position: bottom center;}
+}
