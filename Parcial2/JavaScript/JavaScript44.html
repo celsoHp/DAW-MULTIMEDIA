@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Añadir y eliminar elementos li de una lista desordenada (ul) con javascript</title>
+        <style>
+            li span {
+                color:#FF0080;
+                border:1px solid #ccc;
+                background-color:#808080;
+                margin-right:20px;
+                padding: 0 2px;
+                border-radius:4px;
+                -moz-border-radius:4px;
+                -webkit-border-radius:4px;
+                -o-border-radius:4px;
+                border-radius:4px;
+                font-weight:bold;
+                font-size:0.8em;
+                cursor:pointer;
+            
+                
+            }
+            <section id="imagen">
+            <h2>imagenes a seleccionar</h2>
+            <img src= https://laopinionla.files.wordpress.com/2015/07/patilla.jpg?quality=60&strip=all&w=940 >
+            <img src= https://gcdn.emol.cl/cocina/files/2010/02/frutas-duraznos.jpg >
+            
+            
+            
+        </style>
+ 
+        <script>
+        // http://www.lawebdelprogramador.com
+ 
+        /**
+         * Funcion que añade un <li> dentro del <ul>
+         */
+        function add_li()
+        {
+            var imagen=document.getElementById("imagen").value;
+            if(imagen.length>0)
+            {
+                if(find_li(imagen))
+                {
+                    var li=document.createElement('li');
+                    li.id=imagen;
+                    li.innerHTML="<span onclick='eliminar(this)'>X</span>"+imagen;
+                    document.getElementById("listaDesordenada").appendChild(li);
+                }
+            }
+            return false;
+        }
+ 
+        /**
+         * Funcion que busca si existe ya el <li> dentrol del <ul>
+         * Devuelve true si no existe.
+         */
+        function find_li(contenido)
+        {
+            var el = document.getElementById("listaDesordenada").getElementsByTagName("li");
+            for (var i=0; i<el.length; i++)
+            {
+                if(el[i].innerHTML==contenido)
+                    return false;
+            }
+            return true;
+        }
+ 
+        /**
+         * Funcion para eliminar los elementos
+         * Tiene que recibir el elemento pulsado
+         */
+        function eliminar(elemento)
+        {
+            var id=elemento.parentNode.getAttribute("id");
+            node=document.getElementById(id);
+            node.parentNode.removeChild(node);
+        }
+    </script>
+    </head>
+ 
+    <body>
+         
+        <p>
+            <form>
+                <input type="seleccion" id="imagen">
+                <br><input type="submit" onclick="return add_li()" value="añadir Nombre"> 
+            </form>
+        
+        <ul id="listaDesordenada">
+        </ul>
+    </body>
+</html>
+
+
+

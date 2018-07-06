@@ -27,17 +27,16 @@
                 margin-bottom:20px;
            background:url(http://www.grasesoria.com/images/GR-Asesoria-Inca-Portada-Empresa.jpg) no-repeat center bottom;
                  height: 200px;
-                background-size: 100%;
-                
-                    
+                background-size: 100%;   
                 
             }
-            header h1,header h2, header h4{
+            
+                 header h1,header h2, header h4{
                 margin: 0;
                 padding: 0;
                 text-align: center;
                 
-}           }
+}          }
 .contenedor section {
      float: left;
     width: 49%;
